@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Detalhamento de Pergunta</title>
+</head>
+<body>
+
+  <h1>{{ pergunta.texto_da_pergunta }}</h1>
+  
+    <ul>
+      {% for resposta in pergunta.resposta_set.all %}
+        <li>{{ resposta.texto_da_resposta }}</li>
+      {% endfor %}
+    </ul>
+
+</body>
+</html>
